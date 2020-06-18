@@ -21,3 +21,7 @@
     * Prototipo: interface que deben implementar los objetos clonables.
     * Prototipo concreto: estructura o tipo que implementa el prototipo.
     * Cliente: crea el nuevo objeto solicitando al prototipo que se clone.
+* #### Adapter
+    Permite adaptar dos interfaces compatibles. Responsable de utilizar las funcionalidades de estructuras independientes o incompatibles.
+    
+    Nos permite hacer compatible componentes antiguos con sistemas nuevos

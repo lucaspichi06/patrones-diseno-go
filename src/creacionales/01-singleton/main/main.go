@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"sync"
 
-	client_one "github.com/lucaspichi06/patrones-diseno-go/creacionales/01-singleton/client-one"
-	client_two "github.com/lucaspichi06/patrones-diseno-go/creacionales/01-singleton/client-two"
-	"github.com/lucaspichi06/patrones-diseno-go/creacionales/01-singleton/singleton"
+	client_one "github.com/lucaspichi06/patrones-diseno-go/src/creacionales/01-singleton/client-one"
+	client_two "github.com/lucaspichi06/patrones-diseno-go/src/creacionales/01-singleton/client-two"
+	"github.com/lucaspichi06/patrones-diseno-go/src/creacionales/01-singleton/singleton"
 )
 
 func main() {
