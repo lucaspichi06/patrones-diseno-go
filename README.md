@@ -52,3 +52,7 @@
     3 | 2 | 6 | 5
     4 | 4 | 16 | 8
     5 | 4 | 20 | 9
+* #### Composite
+    Permite construir objetos complejos a partir de objetos más simples pero similares.
+
+    Se debe utilizar la composición para crear estructuras de árbol y se debe usar recursividad para procesar la información de los objetos.
