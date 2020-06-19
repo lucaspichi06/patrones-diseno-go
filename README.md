@@ -39,3 +39,16 @@
 
     Son demasiados los procesos para que el cliente los haga uno a uno, e incluso puede ser que se salte algunos. Por esta razón la fachada se encargará de enmascarar todo ese proceso en uno solo:
     * Registrar comentario.
+* #### Bridge (Puente)
+    Permite separar el comportamiento de la representación (abstracción de la implementación).
+
+    Requiere de una clase abstracta y una interface, pero como en go no hay clases, se usan iterfaces para ambos objetivos.
+
+    Esto permite combinar comportamiento con representaciones, utilizando menos cantidad de estructuras.
+    #### Diferencias contra herencia (en cantidad de clases)
+    | Representación | Implementación | Herencia | Bridge
+    ---: | ---: | ---: | ---:
+    2 | 2 | 4 | 4
+    3 | 2 | 6 | 5
+    4 | 4 | 16 | 8
+    5 | 4 | 20 | 9
