@@ -60,3 +60,9 @@
     Permite añadir funcionalidad a un objeto dinámicamente. Sin afectar el comportamiento de una clase/estructura completamente.
 
     Funciona como un wrapper. Envuelve el comportamiento de una función/estructura sin tener que modificarlo.
+* #### Proxy
+    Este patrón de diseño permite crear un objeto que se encargue de comunicarse con otros objetos para que el objeto cliente no tenga que comunicarse directamente con ellos.
+
+    Nos permite simular la existencia de un objeto local cuando en realidad el objeto está remoto.
+
+    También permite realizar procesos como caché de información.
