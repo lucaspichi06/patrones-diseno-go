@@ -56,3 +56,7 @@
     Permite construir objetos complejos a partir de objetos más simples pero similares.
 
     Se debe utilizar la composición para crear estructuras de árbol y se debe usar recursividad para procesar la información de los objetos.
+* #### Decorator
+    Permite añadir funcionalidad a un objeto dinámicamente. Sin afectar el comportamiento de una clase/estructura completamente.
+
+    Funciona como un wrapper. Envuelve el comportamiento de una función/estructura sin tener que modificarlo.
