@@ -2,6 +2,7 @@
 
 ### *Implementación de patrones de diseño en GoLang*
 
+## Creacionales
 * #### Singleton
 * #### Factory
 * #### Builder
@@ -21,6 +22,7 @@
     * Prototipo: interface que deben implementar los objetos clonables.
     * Prototipo concreto: estructura o tipo que implementa el prototipo.
     * Cliente: crea el nuevo objeto solicitando al prototipo que se clone.
+## Estructurales
 * #### Adapter
     Permite adaptar dos interfaces compatibles. Responsable de utilizar las funcionalidades de estructuras independientes o incompatibles.
     
@@ -66,3 +68,6 @@
     Nos permite simular la existencia de un objeto local cuando en realidad el objeto está remoto.
 
     También permite realizar procesos como caché de información.
+## Comportamiento
+* #### Observer
+    Permite tener una relación de uno a muchos entre diferentes objetos con el objetivo de que podamos observar el comportamiento de un objeto y todos aquellos observadores que se encuentren registrados al comportamiento de dicho objeto sean notificados cuando ocurra un cambio.
