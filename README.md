@@ -21,3 +21,48 @@
     * Prototipo: interface que deben implementar los objetos clonables.
     * Prototipo concreto: estructura o tipo que implementa el prototipo.
     * Cliente: crea el nuevo objeto solicitando al prototipo que se clone.
+* #### Adapter
+    Permite adaptar dos interfaces compatibles. Responsable de utilizar las funcionalidades de estructuras independientes o incompatibles.
+    
+    Nos permite hacer compatible componentes antiguos con sistemas nuevos.
+* #### Facade (Fachada)
+    Permite ocultar la complejidad de un sistema proveyendo una interfaz sencilla para el cliente.
+    Unifica las diferentes interfaces del sistema en una sola, con esto la perspectiva del cliente es el uso de un sistema de fácil acceso.
+    #### Ejemplo
+    Haremos un proceso para registrar los comentarios de una persona en un post de un blog.
+
+    Para realizar esto, el sistema debe ejecutar varios procesos:
+    * Validar que el usuario esté logueado y activo.
+    * Validar que el usuario tiene permiso de comentar.
+    * Registrar el comentario.
+    * Notificar al creador del post que llegó un comentario.
+
+    Son demasiados los procesos para que el cliente los haga uno a uno, e incluso puede ser que se salte algunos. Por esta razón la fachada se encargará de enmascarar todo ese proceso en uno solo:
+    * Registrar comentario.
+* #### Bridge (Puente)
+    Permite separar el comportamiento de la representación (abstracción de la implementación).
+
+    Requiere de una clase abstracta y una interface, pero como en go no hay clases, se usan iterfaces para ambos objetivos.
+
+    Esto permite combinar comportamiento con representaciones, utilizando menos cantidad de estructuras.
+    #### Diferencias contra herencia (en cantidad de clases)
+    | Representación | Implementación | Herencia | Bridge
+    ---: | ---: | ---: | ---:
+    2 | 2 | 4 | 4
+    3 | 2 | 6 | 5
+    4 | 4 | 16 | 8
+    5 | 4 | 20 | 9
+* #### Composite
+    Permite construir objetos complejos a partir de objetos más simples pero similares.
+
+    Se debe utilizar la composición para crear estructuras de árbol y se debe usar recursividad para procesar la información de los objetos.
+* #### Decorator
+    Permite añadir funcionalidad a un objeto dinámicamente. Sin afectar el comportamiento de una clase/estructura completamente.
+
+    Funciona como un wrapper. Envuelve el comportamiento de una función/estructura sin tener que modificarlo.
+* #### Proxy
+    Este patrón de diseño permite crear un objeto que se encargue de comunicarse con otros objetos para que el objeto cliente no tenga que comunicarse directamente con ellos.
+
+    Nos permite simular la existencia de un objeto local cuando en realidad el objeto está remoto.
+
+    También permite realizar procesos como caché de información.
