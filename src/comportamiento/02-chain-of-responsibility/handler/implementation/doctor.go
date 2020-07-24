@@ -18,7 +18,10 @@ func (d *Doctor) Execute(p *domain.Patient) {
 	}
 	fmt.Println("Doctor checking patient")
 	p.DoctorCheckUpDone = true
-	d.next.Execute(p)
+
+	if d.next != nil {
+		d.next.Execute(p)
+	}
 }
 
 func (d *Doctor) SetNext(next handler.Department) {

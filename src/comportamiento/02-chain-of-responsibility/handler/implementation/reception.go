@@ -18,7 +18,9 @@ func (r *Reception) Execute(p *domain.Patient) {
 	}
 	fmt.Println("Reception registrering patient")
 	p.RegistrationDone = true
-	r.next.Execute(p)
+	if r.next != nil {
+		r.next.Execute(p)
+	}
 }
 
 func (r *Reception) SetNext(next handler.Department) {

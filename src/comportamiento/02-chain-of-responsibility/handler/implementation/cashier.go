@@ -12,17 +12,15 @@ type Cashier struct {
 }
 
 func (c *Cashier) Execute(p *domain.Patient) {
-	if c.next == nil {
-		fmt.Println("Transaction Completed")
-		return
-	}
 	if p.PaymentDone {
 		fmt.Println("Payment already done")
 		c.next.Execute(p)
 	}
-	fmt.Println("Payment in course")
+	fmt.Println("Cashier getting money from patient")
 	p.PaymentDone = true
-	c.next.Execute(p)
+	if c.next != nil {
+		c.next.Execute(p)
+	}
 }
 
 func (c *Cashier) SetNext(next handler.Department) {
