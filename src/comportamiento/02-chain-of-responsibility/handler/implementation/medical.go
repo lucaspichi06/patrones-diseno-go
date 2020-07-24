@@ -18,7 +18,9 @@ func (m *Medical) Execute(p *domain.Patient) {
 	}
 	fmt.Println("Medical giving medicine to patient")
 	p.MedicineDone = true
-	m.next.Execute(p)
+	if m.next != nil {
+		m.next.Execute(p)
+	}
 }
 
 func (m *Medical) SetNext(next handler.Department) {
