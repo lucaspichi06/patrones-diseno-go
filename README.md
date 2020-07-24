@@ -71,3 +71,7 @@
 ## Comportamiento
 * #### Observer
     Permite tener una relación de uno a muchos entre diferentes objetos con el objetivo de que podamos observar el comportamiento de un objeto y todos aquellos observadores que se encuentren registrados al comportamiento de dicho objeto sean notificados cuando ocurra un cambio.
+* #### Chain of Responsibility
+    Permite crear una cadena de manejadores de solicitudes. Para cada solicitud entrante, se pasa la misma a través de la cadena y cada uno de los controladores:
+    * Procesa la solicitud u omite el procesamiento.
+    * Decide si pasar la solicitud al siguiente controlador de la cadena.
