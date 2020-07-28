@@ -91,3 +91,5 @@
     Cuándo utilizarlo:
     * Cuando el objeto puede presentarse en diferentes estados.
     * Cuando un objeto tendrá diferentes respuestas ante la misma petición dependiendo el estado actual del mismo.
+* #### Template Method
+    Permite definir un template o algoritmo para una operación particular. Nace de la necesidad de extender determinados comportamientos dentro de un mismo algoritmo por parte de diferentes entidades.
