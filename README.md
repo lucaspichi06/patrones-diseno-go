@@ -86,3 +86,8 @@
     Cuándo utilizarlo:
     * Cuando un objeto necesita soportar diferentes comportamiento y es necesario cambiar ese comportamiento en tiempo de ejecución.
     * Cuando se tienen algoritmos diferentes que son similares y solo difieren en la forma en que ejecutan algún comportamiento.
+* #### State
+    Permite cambiar el comportamiento de un objeto cuando cambia el estado del mismo.
+    Cuándo utilizarlo:
+    * Cuando el objeto puede presentarse en diferentes estados.
+    * Cuando un objeto tendrá diferentes respuestas ante la misma petición dependiendo el estado actual del mismo.
