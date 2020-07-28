@@ -4,7 +4,13 @@
 
 ## Creacionales
 * #### Singleton
+    Este patrón se utiliza cuando solo debe existir una única instancia de una estructura. Esta instancia única es llamada objeto singleton.
+    Algunos de los casos en donde el objeto singleton es aplicable:
+    * Instancia de base de datos: solo queremos crear una única instancia de objeto de base de datos y esa instancia se utilizará en toda la aplicación.
+    * Instancia de usuario: solo se debe crear una única instancia del usuario y se debe usar en toda la aplicación.
 * #### Factory
+    Proporciona una forma de ocultar la lógica de creación de las instancias que se crean.
+    El cliente solo interactúa con una estructura factory y le dice el tipo de instancias que deben crearse. La clase factory interactúa con las estructuras concretas correspondientes y devuelve la instancia correcta.
 * #### Builder
     Permite separar la construcción de un objeto (complejo o no) de su representación con el fin de que el mismo proceso de creación pueda crear diferentes representaciones.
     * Product: objeto principal construido. Representa el objeto bajo construcción.
@@ -75,3 +81,8 @@
     Permite crear una cadena de manejadores de solicitudes. Para cada solicitud entrante, se pasa la misma a través de la cadena y cada uno de los controladores:
     * Procesa la solicitud u omite el procesamiento.
     * Decide si pasar la solicitud al siguiente controlador de la cadena.
+* #### Strategy
+    Permite cambiar el comportamiento de un objeto en tiempo de ejecución sin ningún cambio en la clase de este objeto.
+    Cuándo utilizarlo:
+    * Cuando un objeto necesita soportar diferentes comportamiento y es necesario cambiar ese comportamiento en tiempo de ejecución.
+    * Cuando se tienen algoritmos diferentes que son similares y solo difieren en la forma en que ejecutan algún comportamiento.
