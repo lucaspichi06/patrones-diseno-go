@@ -93,3 +93,6 @@
     * Cuando un objeto tendrá diferentes respuestas ante la misma petición dependiendo el estado actual del mismo.
 * #### Template Method
     Permite definir un template o algoritmo para una operación particular. Nace de la necesidad de extender determinados comportamientos dentro de un mismo algoritmo por parte de diferentes entidades.
+* #### Iterator
+    En este patrón la estructura de la colección proporciona uniteerador que le permite recorrer cada elemento de la estructura de la colección en secuencia sin exponer su implementación subyacente.
+    La idea principal detrás de este patrón es exponer la lógica de iteración de una estructura de colección en un objeto diferente (que implementa la interfaz del iterador). Este iterador proporciona un método genérico para iterar sobre una colección independiente de su tipo.
