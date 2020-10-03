@@ -96,3 +96,5 @@
 * #### Iterator
     En este patrón la estructura de la colección proporciona uniteerador que le permite recorrer cada elemento de la estructura de la colección en secuencia sin exponer su implementación subyacente.
     La idea principal detrás de este patrón es exponer la lógica de iteración de una estructura de colección en un objeto diferente (que implementa la interfaz del iterador). Este iterador proporciona un método genérico para iterar sobre una colección independiente de su tipo.
+* #### Mediator
+    Este patrón sugiere la creación de un objeto mediador para evitar la comunicación directa entre objetos y así evitar la dependencia directa entre estos.
